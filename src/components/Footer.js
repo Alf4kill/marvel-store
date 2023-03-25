@@ -14,8 +14,8 @@ const Footer = () => {
             </Link>
             <p>
               {" "}
-              Copyright &copy; <span class="year"> 2027 </span> by Marvel, Inc.
-              All rights reserved.
+              Copyright &copy; <span> 2027 </span> by Marvel, Inc. All rights
+              reserved.
             </p>
           </div>
           <div className="footer-col">

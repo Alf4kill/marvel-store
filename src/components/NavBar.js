@@ -1,8 +1,8 @@
 import React from "react";
+import { Cart } from "styled-icons/boxicons-solid";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { CartOutline } from "react-ionicons";
 
 const Nav = () => {
   return (
@@ -13,16 +13,9 @@ const Nav = () => {
             <img className="logo-nav" src={logo} alt="Marvel logo" />
           </Link>
 
-          <ul className="nav-links">
-            <Link to="/chart">
-              <CartOutline
-                color={"#ffffff"}
-                title={CartOutline}
-                height="2.2rem"
-                width="2.2rem"
-              />
-            </Link>
-          </ul>
+          <Link to="/cart">
+            <Cart className="cart" />
+          </Link>
         </div>
       </div>
     </NavContainer>
@@ -50,5 +43,10 @@ const NavContainer = styled.nav`
   .logo-nav {
     height: 2rem;
   }
+  .cart {
+    height: 2rem;
+    color: white;
+  }
 `;
+
 export default Nav;
