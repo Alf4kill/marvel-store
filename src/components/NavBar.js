@@ -1,7 +1,7 @@
 import React from "react";
-import { Cart } from "styled-icons/boxicons-solid";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Cart } from "styled-icons/boxicons-solid";
 import logo from "../assets/logo.png";
 
 const Nav = () => {
