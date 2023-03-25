@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import hero_backgroud from "../assets/hero_background.png";
+import hero_text from "../assets/hero_text.png";
 const Hero = () => {
   return (
     <HeroContainer>
       <div className="nav-center">
-        <h1>
-          <span>Welcomes Heroes to the Marvel Store!</span>
-        </h1>
+        <img src={hero_text} />
       </div>
     </HeroContainer>
   );
@@ -26,21 +25,18 @@ const HeroContainer = styled.section`
     width: 90vw;
     margin: 0 auto;
   }
-  h1 {
-    font-size: 0.9rem;
+  img {
+    height: 10rem;
   }
-  h1 span {
-    background-color: #f0f0f0;
-  }
-
   @media (min-width: 425px) {
-    h1 {
-      font-size: 1.2rem;
+    img {
+      height: 15rem;
     }
   }
   @media (min-width: 768px) {
-    h1 {
-      font-size: 2rem;
+    height: 20rem;
+    img {
+      height: 20rem;
     }
   }
 `;
