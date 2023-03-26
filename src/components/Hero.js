@@ -5,7 +5,7 @@ import hero_text from "../assets/hero_text.png";
 const Hero = () => {
   return (
     <HeroContainer>
-      <div className="nav-center">
+      <div className="hero-center">
         <img src={hero_text} />
       </div>
     </HeroContainer>
@@ -13,12 +13,11 @@ const Hero = () => {
 };
 const HeroContainer = styled.section`
   display: flex;
-  height: 15rem;
   align-items: center;
   justify-content: center;
   background-image: url(${hero_backgroud});
 
-  .nav-center {
+  .hero-center {
     display: flex;
     align-items: center;
     justify-content: center;
