@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "source-map-loader": "^4.0.1"
   }
 }

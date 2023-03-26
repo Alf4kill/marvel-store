@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         element: <CartRoute />,
       },
       {
-        path: "comic",
+        path: "/:id",
         element: <ComicRoute />,
       },
     ],
