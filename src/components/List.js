@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import hero_text from "../assets/hero_text.png";
 import axios from "axios";
 import Comic from "./Comic";
 const List = () => {
   const [url, setUrl] = useState(
-    "http://gateway.marvel.com/v1/public/comics?ts=1&apikey=929b0b518c9fea232b7c1fe217e2b5a6&hash=36b04c609b16c3e1caf0d5556d1c762e"
+    "http://gateway.marvel.com/v1/public/comics?ts=1&apikey=b8a2229872d303038a60b421120a4cae&hash=63d13766d123315cc328f72c3e806949"
   );
   const [item, setItem] = useState();
   useEffect(() => {

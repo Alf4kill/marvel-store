@@ -1,7 +1,8 @@
+import ComicInfo from "../components/ComicInfo";
 function ComicRoute() {
   return (
     <div>
-      <p>comic route</p>
+      <ComicInfo />
     </div>
   );
 }

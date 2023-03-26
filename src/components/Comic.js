@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { faker } from "@faker-js/faker";
 import { useNavigate } from "react-router-dom";
 
 const Comic = ({ data }) => {
@@ -12,9 +11,6 @@ const Comic = ({ data }) => {
             <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} />
             <div className="comic-info">
               <h3 className="comic-name">{`${item.title}`}</h3>
-              <h3 className="comic-price">
-                {faker.finance.amount(10, 100, 2, "$")}
-              </h3>
             </div>
           </ComicContainer>
         );
@@ -35,7 +31,6 @@ const ComicContainer = styled.div`
   }
   @media (min-width: 765px) {
     font-size: 80%;
-
     img {
       height: 15rem;
     }
@@ -46,8 +41,9 @@ const ComicContainer = styled.div`
     }
   }
   @media (min-width: 1500px) {
-    
-  }
+    img {
+      height: 25rem;
+    }
   }
 `;
 
