@@ -17,32 +17,35 @@ const ComicInfo = () => {
     setItem(res.data.results[0]);
     console.log(item);
   };
-  // fetch();
+  fetch();
   return (
     <ComicInfoContainer>
       <div className="title-section">
         <h1 className="list-title">Comic information</h1>
       </div>
-      {!item ? (
-        "loading"
-      ) : (
-        <div className="comic-info">
-          <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} />
-          <h3 className="comic-name">{`${item.title}`}</h3>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo autem
-            laboriosam natus unde aliquam atque quisquam maiores tenetur quos,
-            ex mollitia eum, quaerat repellat accusantium dolor voluptatem
-            officia. Maiores, fugiat.
-          </h3>
-          <div className="comic-price">
-            <h3 className="comic-price">Just for! {mockPrice}</h3>
-            <Link to="/cart">
-              <button className="cart-button">ADD TO CART</button>
-            </Link>
+
+      <div className="comic-info">
+        {!item ? (
+          "loading"
+        ) : (
+          <div>
+            <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} />
+            <h3 className="comic-name">{`${item.title}`}</h3>
           </div>
+        )}
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo autem
+          laboriosam natus unde aliquam atque quisquam maiores tenetur quos, ex
+          mollitia eum, quaerat repellat accusantium dolor voluptatem officia.
+          Maiores, fugiat.
+        </h3>
+        <div className="comic-price">
+          <h3 className="comic-price">Just for! {mockPrice}</h3>
+          <Link to="/cart">
+            <button className="cart-button">ADD TO CART</button>
+          </Link>
         </div>
-      )}
+      </div>
     </ComicInfoContainer>
   );
 };
