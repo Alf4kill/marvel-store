@@ -1,4 +1,3 @@
-import React from "react";
 export const link = [
   {
     id: 1,

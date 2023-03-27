@@ -9,7 +9,9 @@ const Cart = () => {
         <h1 className="cart-title">SHOPPING CART</h1>
         <h3 className="cart-subtitle">Your cart is empty in the moment</h3>
         <Link to="/">
-          <a class="btn btn--full ">Continue shopping</a>
+          <a href="" class="btn btn--full ">
+            Continue shopping
+          </a>
         </Link>
       </div>
     </CartContainer>
