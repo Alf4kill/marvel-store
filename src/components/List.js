@@ -4,7 +4,7 @@ import axios from "axios";
 import Comic from "./Comic";
 const List = () => {
   const [url, setUrl] = useState(
-    "http://gateway.marvel.com/v1/public/comics?ts=1&apikey=b8a2229872d303038a60b421120a4cae&hash=63d13766d123315cc328f72c3e806949"
+    "https://gateway.marvel.com/v1/public/comics?ts=1&apikey=b8a2229872d303038a60b421120a4cae&hash=63d13766d123315cc328f72c3e806949"
   );
   const [item, setItem] = useState();
   useEffect(() => {
