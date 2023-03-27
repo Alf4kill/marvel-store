@@ -28,7 +28,10 @@ const ComicInfo = () => {
           "loading"
         ) : (
           <div>
-            <img src={`${item.thumbnail.path}.${item.thumbnail.extension}` alt="comic img"} />
+            <img
+              src={`${item.thumbnail.path}.${item.thumbnail.extension}`}
+              alt="comic img"
+            />
             <h3 className="comic-name">{`${item.title}`}</h3>
           </div>
         )}
