@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
@@ -6,17 +6,18 @@ import { Link } from "react-router-dom";
 import { faker } from "@faker-js/faker";
 
 const ComicInfo = () => {
-  const mockPrice = faker.commerce.price(10, 200, 0, "$");
-
   const { id } = useParams();
   const [item, setItem] = useState();
-  const fetch = async () => {
-    const res = await axios.get(
-      `https://gateway.marvel.com:443/v1/public/comics/${id}?ts=1&apikey=b8a2229872d303038a60b421120a4cae&hash=63d13766d123315cc328f72c3e806949`
-    );
-    setItem(res.data.data.results[0]);
-  };
-  fetch();
+  useEffect(() => {
+    const fetch = async () => {
+      const res = await axios.get(
+        `https://gateway.marvel.com:443/v1/public/comics/${id}?ts=1&apikey=b8a2229872d303038a60b421120a4cae&hash=63d13766d123315cc328f72c3e806949`
+      );
+      setItem(res.data.data.results[0]);
+    };
+    fetch();
+  }, [setItem]);
+
   return (
     <ComicInfoContainer>
       <div className="title-section">
@@ -42,7 +43,9 @@ const ComicInfo = () => {
           Maiores, fugiat.
         </h3>
         <div className="comic-price">
-          <h3 className="comic-price">Just for! {mockPrice}</h3>
+          <h3 className="comic-price">
+            Just for! {faker.commerce.price(10, 200, 0, "$")}
+          </h3>
           <Link to="/cart">
             <button className="cart-button">ADD TO CART</button>
           </Link>
