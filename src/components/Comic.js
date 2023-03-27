@@ -8,7 +8,10 @@ const Comic = ({ data }) => {
     ? data.map((item) => {
         return (
           <ComicContainer key={item.id} onClick={() => navigate(`/${item.id}`)}>
-            <img src={`${item.thumbnail.path}.${item.thumbnail.extension}` alt="HQ img"} />
+            <img
+              src={`${item.thumbnail.path}.${item.thumbnail.extension}`}
+              alt="HQ img"
+            />
             <div className="comic-info">
               <h3 className="comic-name">{`${item.title}`}</h3>
             </div>
