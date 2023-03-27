@@ -16,6 +16,6 @@ As principais tecnologias usadas para a criação do site foram:
 
 ///////////////////////////Desafios e futuras implementações ///////////////////////////
 
-Um dos meus maiores desafios para a criação desse site foi a corrida contra o tempo, infelizmente devido a correria do dia a dia passei alguns preciosos dias sem ter notado o email sobre o desafio. Além desse fator tive um choque sobre o processo de utilização de algumas das tecnologias usadas no projeto por nunca ter usado como Styled Components não denunciar facil pequenos erros de digitação e o Cypress que envolve todo uma area separada para os testes além de a minha experiencia anterior com testes em React serem majoritariamente em testes unitarios e de componentes.
+Um dos meus maiores desafios para a replicação desse teste foi a corrida contra o tempo, inclusive levar para a balança o tempo que julguei ser necessário aprender tecnologias que nunca havia utilizado antes como o Styled Componentes e Cypress além do desafios relacionados ao uso inicial delas em um projeto real. Levando em consideração a experiencia que tive com esse projeto eu esquematizaria um tempo maior para o uso prático das novas tecnologias pois mesmo com o profundo estudo elas demandam um tempo entre para o aperfeiçoamento em ambiente real.
 
 Para uma futura implementação teria foco em principalmente realizar a parte de Redux relacionada a adição de HQs para o carrinho do site e a possibilidade de uso de cupons especiais de desconto.
