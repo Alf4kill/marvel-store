@@ -13,7 +13,7 @@ const List = () => {
       setItem(res.data.data.results);
     };
     fetch();
-  }, [setUrl]);
+  }, []);
 
   return (
     <ListContainer>
