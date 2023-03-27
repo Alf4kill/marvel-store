@@ -14,8 +14,7 @@ const ComicInfo = () => {
     const res = await axios.get(
       `https://gateway.marvel.com:443/v1/public/comics/${id}?ts=1&apikey=b8a2229872d303038a60b421120a4cae&hash=63d13766d123315cc328f72c3e806949`
     );
-    setItem(res.data.results[0]);
-    console.log(item);
+    setItem(res.data.data.results[0]);
   };
   fetch();
   return (

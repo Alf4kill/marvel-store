@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+//////////////////////////////////////Marvel-Store/////////////////////////////////////
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse é o projeto Marvel-store feito com o objetivo de ser um website para uma loja virtual da Marvel.
 
-## Available Scripts
+///////////////////////////////////////Descrição///////////////////////////////////////
 
-In the project directory, you can run:
+Esse projeto tem como objetivo a criação de uma homepage com uma listagem paginada de HQ's da Marvel com uma pagina para visualização individual de cada HQ's e uma pagina para a função de carrinho. Um dos principais focos para a realização do site foi a criação do site de maneira modular como por exemplo o uso de React-router na criação das rotas do site, HTML escrito de forma semântica e o layout ser responsivo e mobile first.
 
-### `npm start`
+As principais tecnologias usadas para a criação do site foram:
+-API da Marvel que fornecem as informações sobre cada HQ como foto de capa e nome.
+-Styled Components para a estilização dos componentes e Styled Icons para o uso de icones especiais como o carrinho de compras.
+-React Router para a criação de rotas para cada pagina do site.
+-Axios para a realização das requisições de informação para a API da Marvel e a entrega das informações.
+-Faker.js para a criação dos preços de cada HQ enviada pela API devido ao fato do falor de price de todas as HQ serem zerados.
+-Cypress para os testes E2E
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+///////////////////////////Desafios e futuras implementações ///////////////////////////
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Um dos meus maiores desafios para a criação desse site foi a corrida contra o tempo, infelizmente devido a correria do dia a dia passei alguns preciosos dias sem ter notado o email sobre o desafio. Além desse fator tive um choque sobre o processo de utilização de algumas das tecnologias usadas no projeto por nunca ter usado como Styled Components não denunciar facil pequenos erros de digitação e o Cypress que envolve todo uma area separada para os testes além de a minha experiencia anterior com testes em React serem majoritariamente em testes unitarios e de componentes.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para uma futura implementação teria foco em principalmente realizar a parte de Redux relacionada a adição de HQs para o carrinho do site e a possibilidade de uso de cupons especiais de desconto.
